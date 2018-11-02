@@ -150,12 +150,14 @@
 @media #{$large-only} {
     // Increase the font size of the post's title on large screen
     .post-header-cover {
-        .post-header {
-            .post-title {
-                font-size:   map-get($headings-font-size, h1) + 3.7rem;
-                line-height: 1.3em;
-            }
-        }
+         .post-header {
+              .post-title {
+              max-width:     map-get($main-content, max-width-large);
+              }
+              .post-meta {
+              max-width:     map-get($main-content, max-width-large);
+              }
+          }
         // Display post header cover div in small size
         &[data-behavior="1"],
         &[data-behavior="2"] {
@@ -182,12 +184,14 @@
 @media #{$xlarge-and-up} {
     // Increase the font size of the post's title on large screen
     .post-header-cover {
-        .post-header {
-            .post-title {
-                font-size:   map-get($headings-font-size, h1) + 3.7rem;
-                line-height: 1.3em;
-            }
-        }
+         .post-header {
+              .post-title {
+              max-width:     map-get($main-content, max-width-large);
+              }
+              .post-meta {
+              max-width:     map-get($main-content, max-width-large);
+              }
+          }
         // Display post header cover div in extra small size
         &[data-behavior="1"] {
             @include post-header-cover-xs;

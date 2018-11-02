@@ -2,20 +2,25 @@
 // --------------------------------------------
 
 // Font families
-$open-sans:            'Open Sans';
-$open-sans-sans-serif: 'Open Sans', sans-serif;
-$merriweather-serif:   'Merriweather', serif;
-$monospace:             Menlo, Consolas, monospace;
+$open-sans: "Open Sans";
+$verdana: Verdana, Geneva;
+//$sans-serif: "Noto Sans","Noto Sans CJK SC","Microsoft Yahei",sans-serif;
+$sans-serif: "Noto Sans", "Source Han Sans CN Normal", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", 'Microsoft Yahei UI', sans-serif;
+$open-sans-sans-serif: $open-sans, $sans-serif;
+$verdana-sans-serif: $verdana, $sans-serif;
+$merriweather-serif: $open-sans-sans-serif;
+//$merriweather-serif:   'Merriweather', serif;
+$monospace:             Menlo, Meslo LG M for Powerline, Consolas, monospace;
 
-$font-family-base: $open-sans-sans-serif;
+$font-family-base: $open-sans-sans-serif;;
 
 $font-families: (
    // base
-   'headings':          $open-sans-sans-serif,
+   'headings':          $verdana-sans-serif,
    // components
    'code':              $monospace,
    'caption':           $merriweather-serif,
-   'image-gallery':     $open-sans,
+   'image-gallery':     $open-sans-sans-serif,
    'post-header-cover': $merriweather-serif,
    'post-meta':         $open-sans-sans-serif,
    'post-content':      $merriweather-serif,
@@ -26,22 +31,23 @@ $font-families: (
 );
 
 // equal to 15px
-$font-size-base:      1.6rem;
-$font-color-base:     #5d686f;
-$line-height-base:    1.9em;
-$letter-spacing-base: 0.01em;
+$font-size-base:      1.5rem;
+// $font-color-base:     #5d686f;
+$font-color-base:     #424242;
+$line-height-base:    1.85em;
+$letter-spacing-base: 0.00em;
 
 // Reduction of font size base on small screen and down
 $font-size-base-sm-screen-reduction-factor: 0.1rem;
 
 // Font size : (X.Xrem = XXpx, 1.0rem = 10px)
 $font-size: (
-    'xxlarge': 2rem,
-    'xlarge': 1.8rem,
-    'large':  1.7rem,
+    'xxlarge': 1.8rem,
+    'xlarge': 1.7rem,
+    'large':  1.6rem,
     'base':   $font-size-base,
-    'medium': 1.5rem,
-    'small':  1.3rem,
+    'medium': 1.4rem,
+    'small':  1.25rem,
     'xsmall': 1rem
 );
 
@@ -55,7 +61,12 @@ $colors: (
     'warning':  #f5aa0a,
     'light':   #9eabb3,
      // use for tag `a`
-    'link':    #349ef3
+    'link':    #349ef3,
+    'link-hover':    #BBDEFB,
+    'grey300':    #E0E0E0,
+    'grey400':    #BDBDBD,
+    'grey600':    #757575,
+    'grey900':    #212121,
 );
 
 // Z-indexes
@@ -166,9 +177,9 @@ $main: (
 // Highlight code
 $highlight: (
     'background':  #f7f8f8,
-    'font-size':   1.4rem,
+    'font-size':   1.3rem,
     'border':      1px solid,
-    'line-height': 1.3em
+    'line-height': 1.2em
 );
 
 // Highlight colors
@@ -217,6 +228,7 @@ $image-gallery-photos-margin: 2px;
 // Main content
 $main-content: (
     'max-width':          750px,
+    'max-width-large':    80%,
     'padding-right-left': 20px,
 );
 
@@ -226,12 +238,12 @@ $main-content: (
 // because they are larger than the post title or something like that
 // font-size : (X.Xrem = XXpx, 1.0rem = 10px)
 $markdown-headings-font-size: (
-    'h1': 3rem,
-    'h2': 2.7rem,
-    'h3': 2.4rem,
-    'h4': 2.1rem,
-    'h5': 1.9rem,
-    'h6': 1.7rem
+    'h1': 2.8rem,
+    'h2': 2.4rem,
+    'h3': 2.0rem,
+    'h4': 1.7rem,
+    'h5': 1.6rem,
+    'h6': 1.5rem
 );
 // Reduction of markdwon headings on small screen and down
 $markdown-headings-font-size-sm-screen-reduction-factor: 0.35rem;
@@ -248,7 +260,8 @@ $post-thumbnail-image-width: 140px;
 // Tooltip
 $tooltip: (
     'min-width':    180px,
-    'background':   rgba(0, 0, 20, 0.93),
+//  'background':   #CB3A56,
+    'background':   #349ef3,
     // Don't change this value, used to horizontally center the tooltip content
     'arrow-width':  15px,
     // Don't change this value, used to vertically center the tooltip content

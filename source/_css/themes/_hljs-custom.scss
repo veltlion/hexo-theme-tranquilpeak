@@ -8,44 +8,102 @@
 // 5. Remove `hljs-` of all CSS class name. E.g : `.hljs-comment` becomes `.comment`
 // 6. Comment line 61 (`'themes/tranquilpeak',`) of `source/_css/tranquilpeak.scss` file
 // 7. Run `grunt buildProd` to build the theme and see the result
-/*
+
 // Default code block
 pre > code {
-    background: ;
-    color: ;
+    background: map-get($highlight, 'background');
+    color:      map-get($highlight-colors, night-rider);
 }
 
 // Default inline code
 code {
-    background-color: ;
+    background-color: map-get($highlight, 'background');
 }
 
 // Tabbed code block tab
 // If your theme is dark then use a lighter background
 // to see clearly which tab is active
 .codeblock--tabbed figcaption .tab.active {
-    background: ;
-    color: ;
+    background: map-get($colors, 'primary');
+    color:      white;
 }
 
 // highlight code block
 figure.highlight,
 .codeblock {
-    background: ;
-    color: ;
+    background: map-get($highlight, 'background');
+    color:      map-get($highlight-colors, night-rider);
 
     figcaption {
-        background: ;
-        color: ;
+        background: map-get($highlight, 'background');
+        color:      #999999;
     }
     .gutter {
-        background: ;
-        border-right-color: ;
+        background:         map-get($highlight, 'background');
+        border-right-color: #e6e6e6;
+
         .line {
-            color: ;
+            color: #aaaaaa;
         }
     }
     // PUT YOUR THEME HERE
+.comment,
+.meta {
+  color: #969896;
+}
+
+.string,
+.variable,
+.template-variable,
+.strong,
+.emphasis,
+.quote {
+  color: #df5000;
+}
+
+.keyword,
+.selector-tag,
+.type {
+  color: #a71d5d;
+}
+
+.literal,
+.symbol,
+.bullet,
+.attribute {
+  color: #0086b3;
+}
+
+.section,
+.name {
+  color: #63a35c;
+}
+
+.tag {
+  color: #333333;
+}
+
+.title,
+.attr,
+.selector-id,
+.selector-class,
+.selector-attr,
+.selector-pseudo {
+  color: #795da3;
+}
+
+.addition {
+  color: #55a532;
+  background-color: #eaffea;
+}
+
+.deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
+}
+
+.link {
+  text-decoration: underline;
+}
 
 }
-*/

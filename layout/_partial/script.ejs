@@ -1,11 +1,24 @@
 <!--SCRIPTS-->
-<%- js('assets/js/jquery.js') %>
-<%- js('assets/js/jquery.fancybox.js') %>
-<%- js('assets/js/thumbs.js') %>
-<%- js('assets/js/tranquilpeak.js') %>
+<%- js('assets/js/script-ytqu2guxmmt8s8n15sstsvr3gj2zf9qgsvlabpitchukzdgnrwxxvjrxun6m.min.js') %>
 <!--SCRIPTS END-->
 <% if (post.comments) { %>
-    <% if (theme.disqus_shortname) { %>
+    <% if (theme.valine.enable) { %>
+        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+        <script src="/assets/js/Valine.min.js"></script>
+        <script>
+            new Valine({
+                av: AV,
+                el: '#comments',
+                notify:'<%- theme.valine.notify %>', 
+                verify:'<%- theme.valine.verify %>', 
+                appId:'<%- theme.valine.appid %>',
+                appKey:'<%- theme.valine.appkey %>',
+                placeholder:'<%- theme.valine.placeholder%>',
+                path:window.location.pathname, 
+                avatar:'<%- theme.valine.avatar %>' 
+            });
+        </script>
+     <% } else if (theme.disqus_shortname) { %>
         <script>
              var disqus_config = function () {
                  this.page.url = '<%= post.permalink %>';

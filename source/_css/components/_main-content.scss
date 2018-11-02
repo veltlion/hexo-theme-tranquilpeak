@@ -5,3 +5,13 @@
     padding-right: map-get($main-content, padding-right-left);
     padding-left:  map-get($main-content, padding-right-left);
 }
+@media #{$xlarge-and-up} {
+ .main-content-wrap { 
+    max-width:     map-get($main-content, max-width-large);
+    }
+}
+@media #{$large-only} {
+ .main-content-wrap { 
+    max-width:     map-get($main-content, max-width-large);
+    }
+}

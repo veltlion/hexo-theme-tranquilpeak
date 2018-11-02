@@ -1,7 +1,6 @@
 # Tranquilpeak
 
-[![Build Status](https://img.shields.io/travis/LouisBarranqueiro/hexo-theme-tranquilpeak/master.svg?style=flat-square)](https://travis-ci.org/LouisBarranqueiro/hexo-theme-tranquilpeak)
-[![Slack](https://img.shields.io/badge/slack-join-cf0e5b.svg?style=flat-square)](https://now-examples-slackin-stlpermtzi.now.sh)
+对 Tranquilpeak 做了一些修改，加入了 Valine 评论。
 
 A gorgeous responsive theme for Hexo blog framework 
 
@@ -30,6 +29,7 @@ A gorgeous responsive theme for Hexo blog framework
 - Support internationalization (i18n)
 - Easily customizable (fonts, colors, layout elements, code coloration, etc...)
   
+
 **Posts features :**  
 
 - Thumbnail image
@@ -42,6 +42,7 @@ A gorgeous responsive theme for Hexo blog framework
 - Tags for images (FancyBox, wide images, tabbed code blocks, highlighted text, alerts)
 - Table of contents  
   
+
 **Integrated services :**  
 
 - Disqus
@@ -52,7 +53,7 @@ A gorgeous responsive theme for Hexo blog framework
 - Algolia
 - Facebook Insights
 - Gitment
- 
+
 ## Quick start
 
 1. Download the latest version built and ready for production here : [releases](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/releases)

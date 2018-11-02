@@ -1,5 +1,5 @@
 # 在所有地方显示的 date 格式化
-date_format: "MMM DD, YYYY"
+date_format: "YYYY年MM月DD日"
 
 global:
     home: "首页"
@@ -17,7 +17,7 @@ global:
     facebook: "Facebook"
     google_plus: "Google Plus"
     linkedin: "LinkedIn"
-    mail: "邮箱"
+    mail: "Email"
     rss: "RSS"
     share_on_facebook: "分享到 Facebook"
     share_on_twitter: "分享到 Twitter"
@@ -58,9 +58,9 @@ post:
     categorized_in: "发布在"
     tagged_in: "标签"
     toc: "目录"
-    read_more: "阅读全文"
+    read_more: "继续阅读"
     go_to_website: "转到"
-    comment_and_share: "评论和共享"
+    comment_and_share: "评论或分享"
     gallery: "画廊"
     image:
         one: "图片"

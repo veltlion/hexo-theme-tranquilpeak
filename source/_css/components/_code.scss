@@ -1,10 +1,11 @@
 // Highlight code block
 figure.highlight,
 .codeblock {
+    background:     white;
     margin:         10px 0;
+    border-radius:  5px;
+    border:         1px solid #d9d9d9 !important;;
     line-height:    map-get($highlight, line-height);
-    padding-top:    15px;
-    padding-bottom: 15px;
     overflow:       hidden;
 
     table {
@@ -29,6 +30,7 @@ figure.highlight,
     .gutter,
     .code {
         vertical-align: top;
+        background: white;
     }
     // hide gutter when code is plain text
     &.plain {
@@ -38,9 +40,12 @@ figure.highlight,
     }
     // Meta bar which contains name of the file and his link
     figcaption {
-        font-size: 1.3rem;
-        padding:   0 15px 20px;
-        margin:    0;
+        font-size:     1.3rem;
+        padding:       10px 15px;
+        margin:        0;
+        background:    #f7f7f7;
+        border-bottom: 1px solid #d9d9d9;
+        color:         #999;
 
         a {
             float: right;
@@ -50,7 +55,7 @@ figure.highlight,
     // Gutter which contains line numbers
     .gutter {
         border-right: map-get($highlight, border);
-        padding:      0.3em 15px;
+        padding:      0.3em 0.5em;
     }
     // Code container
     .code {
@@ -58,7 +63,7 @@ figure.highlight,
         width:   100%;
 
         pre {
-            max-width:  calc(#{map-get($main-content, 'max-width')} - 50px);
+            max-width:  100%;
             overflow-x: auto;
             overflow-y: hidden;
         }

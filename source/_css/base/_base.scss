@@ -7,6 +7,8 @@ html {
     // Overrides the highlight color shown when the user taps
     //a link or a JavaScript clickable element in Safari on iPhone
     @include prefix(tap-highlight-color, rgba(0, 0, 0, 0), 'webkit');
+    ::selection { background: rgba(0, 149, 255, .2) }
+    ::-moz-selection { background: rgba(0, 149, 255, .2) }
 }
 
 body {
@@ -36,15 +38,15 @@ h5,
 h6 {
     letter-spacing: -0.04em;
     font-family:    map-get($font-families, 'headings');
-    font-weight:    700;
+    font-weight:    normal;
     line-height:    1.45em;
-    color:          #4a4a4a;
+    color:          map-get($colors, grey900);
 }
 
 h1,
 h2,
 h3 {
-    margin: 1em 0 1em 0;
+    margin: 2em 0 1em 0;
 }
 
 h4,
@@ -143,6 +145,7 @@ pre > code {
 code {
     font-size:        map-get($font-size, medium);
     display:          inline-block;
+    border-radius:    5px;
     font-family:      map-get($font-families, 'code');
     font-weight:      400;
     background-color: map-get($highlight, 'background');
