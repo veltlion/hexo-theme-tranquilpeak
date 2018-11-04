@@ -31,10 +31,10 @@ $font-families: (
 );
 
 // equal to 15px
-$font-size-base:      1.5rem;
+$font-size-base:      1.6rem;
 // $font-color-base:     #5d686f;
 $font-color-base:     #424242;
-$line-height-base:    1.85em;
+$line-height-base:    1.9em;
 $letter-spacing-base: 0.00em;
 
 // Reduction of font size base on small screen and down
@@ -42,12 +42,12 @@ $font-size-base-sm-screen-reduction-factor: 0.1rem;
 
 // Font size : (X.Xrem = XXpx, 1.0rem = 10px)
 $font-size: (
-    'xxlarge': 1.8rem,
-    'xlarge': 1.7rem,
-    'large':  1.6rem,
+    'xxlarge': 2rem,
+    'xlarge': 1.8rem,
+    'large':  1.7rem,
     'base':   $font-size-base,
-    'medium': 1.4rem,
-    'small':  1.25rem,
+    'medium': 1.5rem,
+    'small':  1.3rem,
     'xsmall': 1rem
 );
 
